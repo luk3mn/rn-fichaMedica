@@ -6,7 +6,11 @@ export default function RecordList({ data }) {
   return (
     <View style={styles.listArea}>
       <View style={{flex: 1}}>
-        <Text style={styles.record}>Nome: {data.name}</Text>
+        <Text style={styles.record}>Nome: {data.firstName} {data.lastName}</Text>
+        <View style={{flexDirection: 'row'}}>
+          <Text style={styles.record}>Idade: {data.age}</Text>
+          <Text style={styles.record}>Sexo: {data.gender}</Text>
+        </View>
         <View style={{flexDirection: 'row'}}>
           <Text style={styles.record}>Peso: {data.weight}</Text>
           <Text style={styles.record}>Altura: {data.height}</Text>
